@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Weather Forecast</title>
+<link rel="stylesheet" href="weather.css">
+<body>
+    <div id="navbar">
+        <h1>DojoWeather</h1>
+        <div id="buttons">
+            <input type="button" value="Burbank" id="burbank" onclick="burbank('#burbank')">
+            <input type="button" value="Chicago" id="chicago" onclick="chicago('#chicago')">
+            <input type="button" value="Dallas" id="dallas" onclick="dallas('#dallas')">
+        </div>
+    </div>
+    <div id="header">
+        <h2>San Jose</h2>
+        <div class="c-f">
+            <span>show temperature in </span>
+            <select name="show temperature in " onchange="convertTemp(this)" >
+                <option id="C" value="celcius">°C</option>
+                <option id="F" value="fahrenheit">°F</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id="today">
+            <h3>Today</h3>
+            <img src="assets/some_rain.png" alt="rain">
+            <span>some rain</span>
+            <div class="degree">
+                <div class="high">24°</div>
+                <div class="low">18°</div>
+            </div>
+        </div>
+        <div id="tomorrow">
+            <h3>Tomorrow</h3>
+            <img src="assets/some_sun.png" alt="sun">
+            <span>some sun</span>
+            <div class="degree">
+                <div class="high">27°</div>
+                <div class="low">19°</div>
+            </div>
+        </div>
+        <div id="friday">
+            <h3>Friday</h3>
+            <img src="assets/some_clouds.png" alt="clouds">
+            <span>some clouds</span>
+            <div class="degree">
+                <div class="high">21°</div>
+                <div class="low">16°</div>
+            </div>
+        </div>
+        <div id="saturday">
+            <h3>Saturday</h3>
+            <img src="assets/some_sun.png" alt="sun">
+            <span>some sun</span> 
+            <div class="degree">
+                <div class="high">26°</div>
+                <div class="low">21°</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" onclick="removeElement(this)">
+        <div>
+            <img src="assets/cookie.png" alt="cookie" id="cookie">
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize<br>
+                    content and ads, to provide social media features and to<br> 
+                    analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+        </div>
+        <input type="button" value="I Accept" id="accept">
+    </footer>
+<script src="weather.js"></script>
+</body>
+</html>

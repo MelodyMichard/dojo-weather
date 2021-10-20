@@ -1,0 +1,103 @@
+#navbar, #header, .container, #today, #tomorrow, #friday, #saturday, .footer, .footer div, .footer div div, .degree {
+    display: flex;
+}
+
+#today, #tomorrow, #friday, #saturday {
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+#navbar, #header, #footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#cookie {
+    height: 75px;
+}
+
+#navbar {
+    background-color: lightblue;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    width: 800px;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+#header {
+    border-bottom: black solid 2px;
+}
+
+.container {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#burbank, #chicago, #dallas {
+    padding: 0;
+    border: none;
+    background: none;
+    
+}
+
+#buttons input[type=button]{
+    font-size: 25px;
+    margin-right: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer{
+    border: black 2px solid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+#accept {
+    height: 30px;
+    background-color: lightblue;
+    box-shadow: black 2px 2px;
+    margin-right: 20px;
+}
+
+.footer div div {
+    flex-direction: column;
+}
+
+.footer div div h4 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.degree {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.high {
+    padding-right: 20px;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.low {
+    padding-left: 20px;
+    color: blue;
+    font-size: larger;
+    font-weight: bold;
+}
