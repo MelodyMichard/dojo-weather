@@ -28,9 +28,7 @@ function fahrenheitToCelcius(fahrenheit) {
 function convertTemp(measure) {
     let e = measure.options[measure.selectedIndex].value;
     if(e === "celcius") {
-        let result = fahrenheitToCelcius;
     }
     if(e === "fahrenheit") {
-        let result = celciusToFahrenheit;
     }   
 }
